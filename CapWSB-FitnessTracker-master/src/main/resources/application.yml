@@ -1,0 +1,24 @@
+spring:
+mail:
+  from: no-reply@example.com
+  host: sandbox.smtp.mailtrap.io
+  port: 2525
+  username: 9d03108ef04b12
+  password: 5dd240a7897f00
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+        user: 9d03108ef04b12
+        password: 5dd240a7897f00
+        auth-method: PLAIN
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    driver-class-name: "org.h2.Driver"
+    username: "sa"
+    password: "password"
+  h2:
+    console:
+      enabled: true
